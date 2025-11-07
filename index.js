@@ -6,14 +6,13 @@ let firstNum = 0;
 let operator = null;
 let secondNum = null;
 
-const display = document.getElementById("display")
-const buttons = document.getElementById("buttons");
 
-//attach numbers to buttons
 for (let i = 0; i < allButtons.length; i++) {
-    const button = document.createElement('button');
-    const value = allButtons[i];
+    let button = document.createElement('button');
+    let value = allButtons[i];
     button.innerText = value;
 
+    document.getElementById("buttons").appendChild(button);
+    const display = document.getElementById("display");
 
 }

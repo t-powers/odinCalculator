@@ -12,6 +12,18 @@ for (let i = 0; i < allButtons.length; i++) {
     let value = allButtons[i];
     button.innerText = value;
 
+    button.addEventListener('click', (e) => {
+        console.log("clicked");
+    })
+
+
+
+
+
+
+
+
+
     document.getElementById("buttons").appendChild(button);
     const display = document.getElementById("display");
 
